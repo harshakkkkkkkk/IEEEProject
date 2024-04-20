@@ -14,6 +14,7 @@ class LinearRegression:
         for _ in range(self.n_iters):
             y_pred = np.dot(X, self.weight) + self.bias
 
+            #The derivative / gradient of w and b
             dw = 1 / n_samples * np.dot(X.T, (y_pred - y))
             db = 1 / n_samples * np.sum(y_pred - y)
 
