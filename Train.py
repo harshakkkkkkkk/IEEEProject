@@ -19,7 +19,7 @@ def mse(y_test, predictions):
     return np.mean((y_test - predictions) ** 2)
 
 mse = mse(y_test, predictions)
-print(mse)
+print("Mean Squared Error:", mse)
 
 y_pred_line = reg.predict(X)
 cmap = plt.get_cmap('viridis')
